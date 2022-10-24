@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+$Red: hsl(0, 78%, 62%);
+$Cyan: hsl(180, 62%, 55%);
+$Orange: hsl(34, 97%, 64%);
+$Blue: hsl(212, 86%, 64%);
+
+$Very-Dark-Blue: hsl(234, 12%, 34%);
+$Grayish-Blue: hsl(229, 6%, 66%);
+$Very-Light-Gray: hsl(0, 0%, 98%);
+
+main {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    font-weight: 200;
+    color: $Grayish-Blue;
+
+    .text{
+        text-align: center;
+
+        .light-text{
+            font-weight: 200;
+            color: $Very-Dark-Blue;
+        }
+
+        .bold-text{
+            color: $Very-Dark-Blue;
+        }
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .middle-section{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .card{
+            width: 350px;
+            height: 250px;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: $Very-Light-Gray;
+
+            .card-icon{
+                width: 50px;
+                height: 50px;
+                align-self: flex-end;
+            }
+
+            .card-title{
+                font-weight: 600;
+                color: $Very-Dark-Blue;
+            }
+        }
+    }
+}
