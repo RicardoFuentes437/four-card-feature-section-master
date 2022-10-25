@@ -8,6 +8,7 @@ main {
 }
 main .text {
   text-align: center;
+  padding: 20px;
 }
 main .text .light-text {
   font-weight: 200;
@@ -21,18 +22,20 @@ main .cards {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding: 20px;
 }
 main .cards .middle-section {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  gap: 20px;
 }
 main .cards .card {
   width: 350px;
-  height: 250px;
+  height: 200px;
   padding: 15px;
   border-radius: 10px;
   background-color: hsl(0deg, 0%, 98%);
+  border-top-width: 4px;
 }
 main .cards .card .card-icon {
   width: 50px;
@@ -42,4 +45,16 @@ main .cards .card .card-icon {
 main .cards .card .card-title {
   font-weight: 600;
   color: hsl(234deg, 12%, 34%);
+}
+main .cards .supervisor {
+  border-top-color: hsl(180deg, 62%, 55%);
+}
+main .cards .builder {
+  border-top-color: hsl(0deg, 78%, 62%);
+}
+main .cards .karma {
+  border-top-color: hsl(34deg, 97%, 64%);
+}
+main .cards .calculator {
+  border-top-color: hsl(212deg, 86%, 64%);
 }/*# sourceMappingURL=style.css.map */
