@@ -1,35 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
-main {
+html, body {
+  width: 100%;
+  height: 100%;
+}
+html main, body main {
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-family: "Poppins";
   font-weight: 200;
+  padding: 20px 0px 20px 0px;
   color: hsl(229deg, 6%, 66%);
+  width: 100%;
+  height: 100%;
 }
-main .text {
+html main .text, body main .text {
   text-align: center;
-  padding: 20px;
+  width: 570px;
 }
-main .text .light-text {
+html main .text .light-text, body main .text .light-text {
   font-weight: 200;
   color: hsl(234deg, 12%, 34%);
 }
-main .text .bold-text {
+html main .text .bold-text, body main .text .bold-text {
   color: hsl(234deg, 12%, 34%);
 }
-main .cards {
+html main .cards, body main .cards {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
+  padding-top: 10px;
 }
-main .cards .middle-section {
+html main .cards .middle-section, body main .cards .middle-section {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
+  padding: 0px 20px 0px 20px;
 }
-main .cards .card {
+html main .cards .card, body main .cards .card {
   width: 350px;
   height: 200px;
   padding: 15px;
@@ -37,24 +46,55 @@ main .cards .card {
   background-color: hsl(0deg, 0%, 98%);
   border-top-width: 4px;
 }
-main .cards .card .card-icon {
+html main .cards .card .card-icon, body main .cards .card .card-icon {
   width: 50px;
   height: 50px;
   align-self: flex-end;
 }
-main .cards .card .card-title {
+html main .cards .card .card-title, body main .cards .card .card-title {
   font-weight: 600;
   color: hsl(234deg, 12%, 34%);
 }
-main .cards .supervisor {
+html main .cards .supervisor, body main .cards .supervisor {
   border-top-color: hsl(180deg, 62%, 55%);
 }
-main .cards .builder {
+html main .cards .builder, body main .cards .builder {
   border-top-color: hsl(0deg, 78%, 62%);
 }
-main .cards .karma {
+html main .cards .karma, body main .cards .karma {
   border-top-color: hsl(34deg, 97%, 64%);
 }
-main .cards .calculator {
+html main .cards .calculator, body main .cards .calculator {
   border-top-color: hsl(212deg, 86%, 64%);
+}
+@media (max-width: 1150px) {
+  html main, body main {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  html main .cards, body main .cards {
+    flex-direction: column;
+  }
+  html main .cards .middle-section, body main .cards .middle-section {
+    flex-direction: row;
+    padding: 20px 0px 20px 0px;
+  }
+}
+@media (max-width: 800px) {
+  html main, body main {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  html main .text, body main .text {
+    width: 90%;
+  }
+  html main .cards, body main .cards {
+    flex-direction: column;
+  }
+  html main .cards .middle-section, body main .cards .middle-section {
+    flex-direction: column;
+    padding: 20px 0px 20px 0px;
+  }
 }/*# sourceMappingURL=style.css.map */

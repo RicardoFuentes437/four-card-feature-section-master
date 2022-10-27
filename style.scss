@@ -9,74 +9,117 @@ $Very-Dark-Blue: hsl(234, 12%, 34%);
 $Grayish-Blue: hsl(229, 6%, 66%);
 $Very-Light-Gray: hsl(0, 0%, 98%);
 
-main {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Poppins';
-    font-weight: 200;
-    color: $Grayish-Blue;
+html, body{
+    width: 100%;
+    height: 100%;
 
-    .text{
-        text-align: center;
-        padding: 20px;
-
-        .light-text{
-            font-weight: 200;
-            color: $Very-Dark-Blue;
-        }
-
-        .bold-text{
-            color: $Very-Dark-Blue;
-        }
-    }
-
-    .cards{
+    main {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
         align-items: center;
-        padding: 20px;
-
-        .middle-section{
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .card{
-            width: 350px;
-            height: 200px;
-            padding: 15px;
-            border-radius: 10px;
-            background-color: $Very-Light-Gray;
-            border-top-width: 4px;
-
-            .card-icon{
-                width: 50px;
-                height: 50px;
-                align-self: flex-end;
+        font-family: 'Poppins';
+        font-weight: 200;
+        padding: 20px 0px 20px 0px;
+        color: $Grayish-Blue;
+        width: 100%;
+        height: 100%;
+    
+        .text{
+            text-align: center;
+            width: 570px;
+    
+            .light-text{
+                font-weight: 200;
+                color: $Very-Dark-Blue;
             }
-
-            .card-title{
-                font-weight: 600;
+    
+            .bold-text{
                 color: $Very-Dark-Blue;
             }
         }
-
-        .supervisor{
-            border-top-color: $Cyan;
+    
+        .cards{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 10px;
+    
+            .middle-section{
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                padding: 0px 20px 0px 20px;
+            }
+    
+            .card{
+                width: 350px;
+                height: 200px;
+                padding: 15px;
+                border-radius: 10px;
+                background-color: $Very-Light-Gray;
+                border-top-width: 4px;
+    
+                .card-icon{
+                    width: 50px;
+                    height: 50px;
+                    align-self: flex-end;
+                }
+    
+                .card-title{
+                    font-weight: 600;
+                    color: $Very-Dark-Blue;
+                }
+            }
+    
+            .supervisor{
+                border-top-color: $Cyan;
+            }
+    
+            .builder{
+                border-top-color: $Red;
+            }
+    
+            .karma{
+                border-top-color: $Orange;
+            }
+    
+            .calculator{
+                border-top-color: $Blue;
+            }
         }
+    }
 
-        .builder{
-            border-top-color: $Red;
+    @media (max-width: 1150px) {
+        main{
+            height: fit-content;
+            .cards{
+                flex-direction: column;
+
+                .middle-section{
+                    flex-direction: row;
+                    padding: 20px 0px 20px 0px;
+                }
+            }
         }
+    }
 
-        .karma{
-            border-top-color: $Orange;
-        }
+    @media (max-width: 800px) {
+        main{
+            height: fit-content;
 
-        .calculator{
-            border-top-color: $Blue;
+            .text{
+                width: 90%;
+            }
+
+            .cards{
+                flex-direction: column;
+
+                .middle-section{
+                    flex-direction: column;
+                    padding: 20px 0px 20px 0px;
+                }
+            }
         }
     }
 }
